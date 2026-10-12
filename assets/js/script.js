@@ -12,6 +12,9 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const NOME = "Miriam";
+const COGNOME = "Caridi";
+console.log(`Ciao, mi chiamo ${NOME} ${COGNOME}`);
 
 /* ESERCIZIO 2 — Calcolatrice base
    Due numeri "a" e "b".
@@ -20,6 +23,14 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let a = 10;
+let b = 5;
+console.log(`${a} + ${b} = ${a + b} `);
+console.log(`${a} - ${b} = ${a - b} `);
+console.log(`${a} x ${b} = ${a * b} `);
+console.log(`${a} : ${b} = ${a / b} `);
+console.log(`${a} : ${b} da come resto ${a % b} `);
+console.log(`${a} elevato a ${b} = ${a ** b} `);
 
 /* ESERCIZIO 3 — Età nel tempo
    const annoNascita (scegli un anno).
@@ -29,6 +40,14 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const annoNascita = 2004;
+const annoCorrente = 2026;
+const etaOggi = annoCorrente - annoNascita;
+const etaTraDieciAnni = etaOggi + 10;
+const etaCinqueAnniFa = etaOggi - 5;
+console.log(`Oggi ho ${etaOggi} anni`);
+console.log(`Tra dieci anni avrò ${etaTraDieciAnni} anni`);
+console.log(`Cinque anni fa avevo ${etaCinqueAnniFa} anni`);
 
 /* ESERCIZIO 4 — Maggiorenne?
    Variabile "eta".
@@ -37,6 +56,9 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let eta = 21;
+let maggiorenne = eta >= 18;
+console.log(`Età: ${eta} - Maggiorenne: ${maggiorenne}`);
 
 /* ESERCIZIO 5 — Tipo del valore
    Cinque variabili: una string, una number, una boolean, una null, una undefined.
@@ -45,6 +67,16 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let oggetto = "Sedia";
+let numero = 10;
+let vero = true;
+let no = null;
+let boh;
+console.log(typeof oggetto);
+console.log(typeof numero);
+console.log(typeof vero);
+console.log(typeof no);
+console.log(typeof boh);
 
 /* ESERCIZIO 6 — === vs ==
    numero = 5
@@ -54,6 +86,11 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let number = 5;
+let string = "5";
+console.log(5 === "5");
+console.log(5 == "5");
+// '===' confronta valore e tipo (strict), mentre '==' confronta solo i valori convertendo i tipi (lasca).
 
 /* ESERCIZIO 7 — Conversioni implicite
    Senza eseguire il codice, prevedi in commento il risultato di queste 4 espressioni.
@@ -65,6 +102,10 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("5" + 3); // 53
+console.log("5" - 3); // 2
+console.log(true + 1); // 2
+console.log("10" * "2"); // 20
 
 /* ESERCIZIO 8 — Classificazione numero
    Variabile "n".
@@ -75,6 +116,10 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let n = 10;
+console.log(`n è pari: `+ (n % 2 === 0));
+console.log(`n è divisibile per 3: `+ (n % 3 === 0));
+console.log(`n è pari e divisibile per 3: `+ (n % 2 === 0 && n % 3 === 0));
 
 /* --EXTRA-- ESERCIZIO 9 — Triangolo
    Tre const "a", "b", "c" (lunghezze dei lati).
