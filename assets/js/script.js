@@ -12,9 +12,9 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const NOME = "Miriam";
-const COGNOME = "Caridi";
-console.log(`Ciao, mi chiamo ${NOME} ${COGNOME}`);
+const nome = "Miriam";
+const cognome = "Caridi";
+console.log(`Ciao, mi chiamo ${nome} ${cognome}`);
 
 /* ESERCIZIO 2 — Calcolatrice base
    Due numeri "a" e "b".
